@@ -88,96 +88,89 @@
 
 <h2><a id="basics" href="#basics">#</a> The basics</h2>
 
-  <p>There is JavaScript running on this page right now! Let's play around
-    with it a little. For the sake of simplicity I'll assume you are using
-    Google Chrome to read this page (if you aren't its probably easier on both
-    of us if you follow along with Chrome).</p>
-  <p>First, right click anywhere on the screen and hit <strong>Inspect Element</strong>,
-    then click on the <strong>Console</strong> tab. You should see a thingy that
-    looks like this:</p>
-  <p>
+  <p>Hay JavaScript corriendo en esta página ahora mismo!, vamos a jugar un poquito con él.
+    Solamente por simplicidad, asumiré que estás usando Google Chrome para leer esta web
+    (en caso que no sea asi, va a ser más fácil para ambos que lo uses).</p>
+  <p>Primero, click derecho en cualquier lugar de la pantalla, elige <strong>Inspect Element</strong>,
+    luego clickea en la pestaña <strong>Console</strong>. Deberias ver algo como ésto:
+  </p>
     <img src="images/console.png" alt="console">
   </p>
-  <p>This is a console, otherwise known as a "command line" or "terminal".
-    Basically its a way to type one thing at a time into a computer and immediately
-    get the computers answer back. They are super useful as a learning tool
-    (I still use a the console nearly every day I'm coding).</p>
-  <p>The console does some pretty cool stuff. Here I have started to type something
-    and the console is helping me out by giving me a list of all the possible
-    things I could continue to type! Another thing you could do is type
+  <p>Esto es una consola, también conocida como "línea de comandos" o "terminal".
+    Basicamente es una manera de teclear una cosa a la vez en la computadora e inmediatamente
+    recibir su respuesta. Son super útiles como herramienta de aprendizaje
+    (aún sigo usando la consola casi todos los dias que programo).</p>
+  <p>La consola hace un par de cosas muy interesantes. Aquí he comenzado a tipear algo
+    y la consola me ofrece una lista de todas las cosas que puedo teclear a continuación!.
+    Otra cosa que puedes hacer es tipear
     <code
     data-language="javascript" class="rainbow"><span class="constant numeric">1</span>  <span class="keyword operator">+</span> 
       <span
       class="constant numeric">1</span>
-        </code>into the console and then hit the <code data-language="javascript" class="rainbow">Enter</code> key
-        and watch what happens.</p>
-  <p>Using the console is a very important part of learning JavaScript. If
-    you don't know if something works or what the command is for something,
-    go to the console and figure it out! Here's an example:</p>
+    </code>en la consola y luego presionar <code data-language="javascript" class="rainbow">Enter</code> y ver que sucede.</p>
+  <p>Usar la consola es una parte fundamental del aprendizaje de JavaScript.
+    Si no sabes si algo funciona o qué comando es para alguna cosa, ve a la consola y averigualo!.
+    Aquí un ejemplo:</p>
 
 <h3><a id="strings" href="#strings">#</a> Strings</h3>
 
-  <p>Since I am a cat I want to replace every instance of the word <code data-language="javascript"
-    class="rainbow">dog</code> on the internet with <code data-language="javascript"
-    class="rainbow">those blasted dogs</code>. First go into your console and
-    type in a few sentences that contain the word <code data-language="javascript"
-    class="rainbow">dog</code> at least once. In JavaScript a bunch of letters,
-    numbers, words or anything else is known as a <strong>String</strong> (as
-    in a <em>string</em> of characters). Strings have to begin AND end with a
-    quotation mark. Single <code data-language="javascript" class="rainbow">'</code> or
-    double <code data-language="javascript" class="rainbow">"</code> is fine,
-    just make sure you use the same at the beginning as you do at the end.</p>
+  <p>Debido a que soy un gato, quiero reemplazar cada aparición, en internet, de la palabra <code data-language="javascript"
+    class="rainbow">perro</code> por <code data-language="javascript" class="rainbow">esos malditos perros</code>.
+    Ve a la consola y teclea algunas oraciones que tengan la palabra <code data-language="javascript" class="rainbow">perro</code>
+    por lo menos una vez. En JavaScript un conjunto de letras. números, palabras o cualquier otra cosa es conocido como 
+    <strong>Cadena</strong> (una <em>cadena</em> de caracteres).
+    Las cadenas tienen que comenzar Y terminar con comillas.
+    Simples <code data-language="javascript" class="rainbow">'</code> o dobles <code data-language="javascript" class="rainbow">"</code>
+    están bien, solo asegurate de que usas las mismas al principio y al final.</p>
   <p>
     <img src="images/console-strings.png" alt="console">
   </p>
-  <p>See the nasty error message? Don't worry - you didn't break any laws.
-    SyntaxError ILLEGAL is just the way it sounds when robots tell you that
-    your program has a problem. The first two sentences had matching quotation
-    marks at the beginning and end, but when I mixed single and double quotation
-    marks it freaked out on me.</p>
-  <p>Ok, to fix up one of these sentences (by replacing <code data-language="javascript"
-    class="rainbow">dog</code> with our enhanced version) we have to first save
-    the original sentence so that we can call it up later when we do our replacing
-    magic. Notice how the string gets repeated in red when we type it into
-    the console? This is because we haven't told it to save the sentence anywhere
-    so it just gives it right back (or it gives us an Error back if we messed
-    something up).</p>
+  <p>¿Ves el desagradable mensaje de error?, no te preocupes (no rompiste ninguna ley).
+    SyntaxError ILLEGAL es solo la forma en la que te alertan los robots cuando tu programa
+    tiene un problema.
+    Las primeras dos oraciones tienen las mismas comillas al principio y al final, pero cuando mezclé
+    las comillas simples con las dobles se asustó de mí.</p>
+  <p>Ok, para arreglar una de estas oraciones (reemplezando <code data-language="javascript" class="rainbow">perro</code>
+    por nuestra versión mejorada), primero vamos a tener que guardar la oración original así la podemos llamar luego, cuando
+    invoquemos nuestro hechizo de reemplazo.
+    ¿Te diste cuenta como la cadena es repetida en rojo cuando las tecleas en la consola?, ésto es porque no le dijimos
+    que la guarde en algún lado así que sólo la devuelve (o devuelve un Error en caso de tipear algo mal).</p>
 
 <h3><a id="values" href="#values">#</a> Values and variables</h3>
 
-  <p><strong>Values</strong> are the simplest components in JavaScript.
+  <p>Los <strong>Valores</strong> son los componentes más simples en JavaScript.
     <code
     data-language="javascript" class="rainbow"><span class="constant numeric">1</span>
-      </code>is a value, <code data-language="javascript" class="rainbow"><span class="constant language">true</span></code> is
-      a value, <code data-language="javascript" class="rainbow">"hello"</code> is
-      a value, <code data-language="javascript" class="rainbow"><span class="keyword">function</span>() {}</code> is
-      a value, the list goes on! There are a handful of different <strong>types</strong> of
-      values in JavaScript but we don't need to go over them all right away —
-      you will learn them naturally the more you code!</p>
-  <p>To store values we use things called <strong>variables</strong>. The word
-    'variable' means 'can change' and is used because variables can store many
-    different types of values and can change their value many times. They are
-    pretty much like mailboxes. We put something in a variable, like our sentence,
-    and then give the variable an address that we can use to look up the sentence
-    later. In real life mailboxes have to have PO Box numbers but in JavaScript
-    you usually just use lowercase letters or numbers without any spaces.</p>
+      </code>es un valor, <code data-language="javascript" class="rainbow"><span class="constant language">true</span></code> es
+      un valor, <code data-language="javascript" class="rainbow">"hola"</code> es
+      un valor, <code data-language="javascript" class="rainbow"><span class="keyword">function</span>() {}</code> es
+      un valor, y ¡la lista continúa!. Hay un puñado de <strong>tipos</strong> diferentes de valores
+      en JavaScript, pero no necesitamos verlos a todos ahora (vas a irlos conociendo naturalmente al programar más y más).</p>
+  <p>Para guardar valores usamos algo llamado <strong>variables</strong>. 
+    La palabra 'variable' significa 'que puede cambiar' y es usada porque 
+    las variables pueden guardar muchos tipos diferentes de valores y pueden 
+    cambiar su valor muchas veces.
+    Son como casillas de correo. Nosotros ponemos algo en una variable, como 
+    nuestra oración anterior y luego le damos a la variable una dirección donde 
+    podemos buscar esa oración. En la vida real estos serían como 
+    (<strong>BUSCAR EJEMPLO CULTURAL NUESTRO</strong>), pero en Javascript usualmente usarás letras en 
+    minúsculas o números sin espacios.</p>
   <p>
     <img src="images/console-variables.png" alt="console">
   </p>
-  <p><code data-language="javascript" class="rainbow"><span class="keyword">var</span></code> is
-    shorthand for variable and the <code data-language="javascript" class="rainbow"><span class="keyword operator">=</span></code> means <em>store the thing on the right hand side in the thing on the left hand side</em>.
-    Also as you can see, now that we are storing our sentence in a variable
-    the console doesn't just return our sentence right away, but instead gives
-    us <code data-language="javascript" class="rainbow">undefined</code> which
-    means <em>there was nothing to return</em>.</p>
-  <p>If you simply type a variable name into the console it will print out
-    the value stored in that variable. A note about variables is that by default
-    they go away when you switch to a different page. If I were to hit the
-    Refresh button in Chrome, for example, my <code data-language="javascript"
-    class="rainbow">dogSentence</code> variable would get wiped and it would
-    be like it never existed. But don't worry about this too much for now —
-    you can just hit the up or down arrows on your keyboard while in the console
-    to go through everything you've entered in recently.</p>
+  <p><code data-language="javascript" class="rainbow"><span class="keyword">var</span></code> es
+    una forma mas corta de variable y el <code data-language="javascript" class="rainbow"><span class="keyword operator">=</span></code> 
+    significa <em>guarda la cosa del lado derecho en la cosa del lado izquierdo</em>.
+    Además, como puedes ver, ahora estamos guardando nuestra oración en una variable,
+    la consola no nos retorna la oración como antes, en cambio nos devuelve un <code data-language="javascript" class="rainbow">undefined</code>
+    el cual significa <em>no hay nada para devolver</em>.</p>
+  <p>Si simplemente tipeas el nombre de la variable en la consola, imprimirá
+    el valor que está alojado en ella. Algo a tener en cuenta de las variables es
+    que por defecto se borrarán cuando cambies a otra página. Si presiono el botón Refresh
+    en Chrome, por ejemplo, mí <code data-language="javascript" class="rainbow">dogSentence</code>
+    se limpiará y será como que nunca existió.
+    Pero por ahora no te preocupes mucho por ésto (podés presionar la teclas arriba o abajo mientras estés
+    en la consola para ir buscando lo que hayas tecleado anteriormente).</p>
 
 <h3><a id="functions" href="#functions">#</a> Functions</h3>
 
