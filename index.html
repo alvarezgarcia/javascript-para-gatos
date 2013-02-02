@@ -23,22 +23,22 @@
 <div class="content-preview-wrapper">
 <div class="content-preview">
 <div class="post-content" style="white-space: normal;">
-<p><span class="bigTitle">JavaScript For Cats</span></p>
+<p><span class="bigTitle">JavaScript para Gatos</span></p>
 
 <h2><span class="header-text">An introduction for new programmers</span><img src="images/substack-cats.png" alt="cat" class="right"></h2>
 
-<h3><em>So easy your human companion could do it too!</em></h3>
+<h3><em>Tan fácil que tu humano también lo puede hacer</em></h3>
 
-  <p>JavaScript is a programming language or, in other words, a means by which
-    a computer is instructed to do things. Just the same as one controls humans
-    with hisses and meows, one controls computers with statements written in
-    a programming language. All web browsers understand JavaScript and you
-    can take advantage of that to make web pages do crazy things!</p>
-  <p>JavaScript started as a programming language to make internet pages more
-    interactive. Nowadays JavaScript runs in more places than just in web browsers
-    — it runs on web servers, phones and <a href="http://jsfiddle.net/rwaldron/WZkn5/show/light/">even robots</a>!
-    This page will teach you some JavaScript basics so that you can get up
-    and running in no time*!</p>
+  <p>JavaScript es un lenguaje de programación, o en otras palabras, un modo
+    por el cual una computadora es ordenada a realizar acciones. De la misma forma
+	que uno controla a los humanos con gruñidos y maullidos, uno controla computadoras con
+	expresiones escritas en un lenguaje de programación.
+	Todos los navegadores web entienden JavaScript y puedes tomar ventaja de eso para que las páginas
+	web hagan cosas locas.</p>
+	JavaScript comenzó como un lenguaje de programación para hacer a los sitios webs más interactivos.
+	Actualmente JavaScript se ejecuta en más lugares que sólo en los navegadores (en servidores web y <a href="http://jsfiddle.net/rwaldron/WZkn5/show/light/">hasta robots</a>
+	Esta página te enseñará algunas cosas básicas sobre JavaScript, para que puedas ponerte en marcha
+	lo más pronto posible*</p>
   <p>* <em>actual time: more than none. probably an hour or two. Also since you are a cat you are less likely to run and more likely to lay around in the sun</em></p>
 
 <h2>Table of contents</h2>
@@ -72,19 +72,19 @@
 
 <h2>Don't be a scaredy cat</h2>
 
-  <p><span class="right"><img src="images/yarnify.png" alt="cat"></span>You
-    will always land on your feet — even when programming! Unlike <a href="images/dealwithit.gif">pawing over a glass of water</a> on
-    your laptop, <em>nothing</em> in these tutorials will damage your computer
-    in any way, even if you mistype a command or click the wrong button. Like
-    cats, computer programmers make mistakes all time: misspelling things,
-    forgetting quotes or brackets, and being forgetful of how basic functions
-    (and yarn) work. Programmers care more about making it work <em>eventually</em> rather
-    than trying to make it work the very first time. The best way to learn
-    is by making mistakes!</p>
-  <p>So don't be a scaredy cat! The absolute worst thing that will happen is
-    that you might have to refresh this page in your web browser if you get
-    stuck. Don't worry though, this will happen very rarely — and we're talkin'
-    13-toed cat rare.</p>
+  <p><span class="right"><img src="images/yarnify.png" alt="cat"></span>
+  Siempre caerás de pié (aún cuando estés programando!), a diferencia de
+  <a href="images/dealwithit.gif">empujar con la patita un vaso de agua</a>
+  sobre tu portatil, <em>nada</em> en estos tutoriales dañará tu computadora
+  de ninguna forma, aún cuando te equivoques al teclear un comando o clickees
+  un botón erróneo. Como los gatos, los programadores cometen errores todo
+  el tiempo: teclean incorrectamente, se olvidan comillas o corchetes, and being forgetful
+  of how basic functions (and yarn) work. Los programadores se preocupan más por
+  por hacer funcionar las cosas en lugar de hacerlas funcionar, <em>eventualmente</em>,
+  en la primera oportunidad. La mejor forma de aprender es, ¡cometiendo errores!<p>
+  <p>Así que ¡no seas un gato asustadizo!, lo peor que podría pasar es que tengas
+  que refrescar la página web en tu navegador si te quedas atascado. De todos modos,
+  no te preocupes esto sucede raramente, raro como un gato de 13 dedos. </p>
 
 <h2><a id="basics" href="#basics">#</a> The basics</h2>
 
@@ -275,51 +275,42 @@ sentence <span class="keyword operator">=</span> <span class="function call">mak
     Porque las funciones retornan <code data-language="javascript" class="rainbow">undefined</code> por defecto!.
 	Puedes elegir retornar un valor utilizando <code data-language="javascript"
     class="rainbow"><span class="keyword">return</span></code>.
-	Las funciones deberían tomar
-  <p>Why is <code data-language="javascript" class="rainbow">sentence</code> empty?
-    Because functions return <code data-language="javascript" class="rainbow">undefined</code> by
-    default! You can choose to return a value by <code data-language="javascript"
-    class="rainbow"><span class="keyword">return</span></code>ing something.
-    Functions should take in a value and, if they change the value or create
-    a new value that is supposed to be used later, <code data-language="javascript"
-    class="rainbow"><span class="keyword">return</span></code> a value (fun
-    fact: a fancy term for this style is <em>functional programming</em>). Here
-    is another function that doesn't return anything but instead uses a different
-    method to show us the output:</p>
+	Las funciones deberían tomar generalmente un valor, y si estas cambian el valor o crean uno nuevo
+	que luego será usado, deben <em>retornar</em> un valor (dato curioso: una forma sofisticada
+	de llamar a este estilo es <em>programación funcional</em>).
+	Aquí hay otra función que no retorna nada, pero usa un método diferente para mostrarnos
+	su salida:</p>
 <pre><code data-language="javascript" class="rainbow"><span class="storage function">function</span> <span class="entity name function">yellIt</span>(<span class="keyword">string</span>) {
   <span class="keyword">string</span> <span class="keyword operator">=</span> <span class="keyword">string</span>.<span class="function call">toUpperCase</span>()
   <span class="keyword">string</span> <span class="keyword operator">=</span> <span class="function call">makeMoreExciting</span>(<span class="keyword">string</span>)
   console.<span class="support method">log</span>(<span class="keyword">string</span>)
 }</code></pre>
 
-  <p>This function, <code data-language="javascript" class="rainbow">yellIt</code>,
-    uses our previous function <code data-language="javascript" class="rainbow">makeMoreExciting</code> as
-    well as the built-in String method <a href="https://developer.mozilla.org/en-US/docs/JavaScript/Reference/Global_Objects/String/toUpperCase">toUpperCase</a>.
-    Methods are just a name for a function when it belongs to something — in
-    this case <code data-language="javascript" class="rainbow">toUpperCase</code> is
-    a function that belongs to <code data-language="javascript" class="rainbow"><span class="keyword">String</span></code> so
-    we can refer to it as either a method <em>or</em> a function. <code data-language="javascript"
-    class="rainbow">makeMoreExciting</code> on the other hand doesn't belong
-    to anyone so it would be technically incorrect to refer to it as a method
-    (confusing, I know).</p>
-  <p>The last line of the function is another built-in that simply takes in
-    any values that you give it and prints them out into the console.</p>
+  <p>Esta función, <code data-language="javascript" class="rainbow">yellIt</code>,
+    usa nuestra función previa, <code data-language="javascript" class="rainbow">makeMoreExciting</code>,
+	así como también el método estándar de JavaScript <a href="https://developer.mozilla.org/en-US/docs/JavaScript/Reference/Global_Objects/String/toUpperCase">toUpperCase</a>.
+	Métodos son sólo un nombre para una función que pertenece a algo (en este caso <code data-language="javascript" class="rainbow">toUpperCase</code> es una función que pertenece a <code data-language="javascript" class="rainbow"><span class="keyword">String</span></code>
+	así que podemos referirnos a ella como un método <em>o</em> como una función.
+	<code data-language="javascript" class="rainbow">makeMoreExciting</code>, por el contrario
+	no pertenece a ninguna, así que sería técnicamente incorrecto referirnos a ella como un método
+	(confuso, lo sé).</p>
+  <p>La última línea de la función es otra función estándar de JavaScript, que simplemente toma
+    valores cualquiera y los imprime en la consola.</p>
   <p>
     <img src="images/custom-function-console-log.png" alt="console">
   </p>
-  <p>So is there something wrong with the above <code data-language="javascript"
-    class="rainbow">yellIt</code> function? It depends! Here are the two major
-    types of functions:</p>
+  <p>Entonces, ¿hay algo erróneo con la función de arriba <code data-language="javascript"
+    class="rainbow">yellIt</code>?, ¡depende!.
+	Aquí están los dos principales tipos de funciones:</p>
   <ul>
-    <li>functions that modify or create values and return them</li>
-    <li>functions take in values and perform some action that cannot be returned</li>
+  	<li>funciones que modifican o crean nuevos valores y los retornan</li>
+	<li>funciones que toman valores y realizan alguna acción sobre ellos que no puede ser retornada</li>
   </ul>
-  <p><code data-language="javascript" class="rainbow">console.log</code> is
-    an example of the second type of function: it prints things out to your
-    console — an action that you can see with your eyes but that cannot be
-    represented as a JavaScript value. My own rule of thumb is to try to keep
-    the two types of functions separate from each other, so here's how I would
-    rewrite the <code data-language="javascript" class="rainbow">yellIt</code> function:</p>
+  <p><code data-language="javascript" class="rainbow">console.log</code> es un
+    ejemplo del segundo tipo de función: imprime algo en tu consola (una acción que puedes
+	ver con tus ojos, pero que no puedes representarla con un valor en JavaScript).
+	Mi propia regla de oro es intentar mantener estos dos tipos de funciones separadas unas de otras,
+	así que les presento a continuación como yo reescribiría <code data-language="javascript" class="rainbow">yellIt</code>:</p>
 <pre><code data-language="javascript" class="rainbow"><span class="storage function">function</span> <span class="entity name function">yellIt</span>(<span class="keyword">string</span>) {
   <span class="keyword">string</span> <span class="keyword operator">=</span> <span class="keyword">string</span>.<span class="function call">toUpperCase</span>()
   <span class="keyword">return</span> <span class="function call">makeMoreExciting</span>(<span class="keyword">string</span>)
@@ -327,42 +318,38 @@ sentence <span class="keyword operator">=</span> <span class="function call">mak
 
 console.<span class="support method">log</span>(<span class="function call">yellIt</span>(<span class="string">"i fear no human"</span>))</code></pre>
 
-  <p>This way <code data-language="javascript" class="rainbow">yellIt</code> becomes
-    more <strong>generic</strong>, meaning it only does one or two simple little
-    things and doesn't know anything about printing itself to a console — that
-    part can always be programmed later, outside the function definition.</p>
+  <p>De este modo <code data-language="javascript" class="rainbow">yellIt</code> se
+    se convierte en algo más <strong>genérico</strong>, significando que sólo hace
+	una a dos pequeñas y simples tareas, y desconoce cosas como imprimirse a sí mismo a una consola.
+	(esa parte siempre puede programarse afuera, fuera de la definición de la función.</p>
 
 <h3><a id="loops" href="#loops">#</a> Loops</h3>
 
-  <p>Now that we have some basic skills under our belt (<em>Author note: do cats even wear belts?</em>)
-    we can start being lazy. What?! Yes, that's right: programming is about
-    being lazy. Larry Wall, inventor of the Perl programming language, called
-    laziness the <a href="http://c2.com/cgi/wiki?LazinessImpatienceHubris">most important virtue</a> of
-    a good programmer. If computers didn't exist you would have to do all sorts
-    of tedious tasks by hand, but if you learn to program you can lay in the
-    sun all day while a computer somewhere runs your programs for you. It is
-    a glorious lifestyle filled with relaxation!</p>
-  <p>Loops are one of the most important ways to harness the power of a computer.
-    Remember <code data-language="javascript" class="rainbow">Underscore.js</code> from
-    earlier? Make sure you have it loaded in the page (remember: you can just
-    hit the up arrow on your keyboard a few times and then hit <code data-language="javascript"
-    class="rainbow">Enter</code> to load it in again if you need to) and try
-    copy/pasting this into your console:</p>
+  <p>Ahora que tenemos unas habilidades básicas debajo del cinturón (<em>Nota del autor: ¿los gatos usan cinturones?</em>)
+    podemos comenzar a ser perezosos. ¿Qué?, sí, correcto: programar es ser perezoso. Larry Wall, creador del
+	lenguaje de programación Perl, llamó a la pereza <a href="http://c2.com/cgi/wiki?LazinessImpatienceHubris">la virtud más importante</a>
+	de un buen programador. Si las computadoras no existieran, deberíamos hacer todo tipo de
+	tareas tediosas a mano, pero si aprendes a programar puedes echarte al sol todo el día, mientras
+	una computadora en algún lado ejecuta tus programas para tí.
+	¡Es un glorioso estilo de vida lleno de relajación!.</p>
+  <p>Los bucles son una de las formas más importantes para aprovechar el poder de una computadora.
+    Recuerdas <code data-language="javascript" class="rainbow">Underscore.js</code> de las secciones anteriores?.
+	Asegurate de que lo tengas cargado en la página (recuerda: puedes simplemente presionar la flecha hacia
+	arriba un par de veces y luego presionar <code data-language="javascript" class="rainbow">Enter</code> para cargarlo
+	nuevamente) e intenta copiar y pegar esto en tu consola:</p>
 <pre><code data-language="javascript" class="rainbow"><span class="storage function">function</span> <span class="entity name function">logANumber</span>(someNumber) {
   console.<span class="support method">log</span>(someNumber)
 }
 _.<span class="function call">times</span>(<span class="constant numeric">10</span>, logANumber)</code></pre>
 
-  <p>This code uses the <a href="http://underscorejs.org/#times">times</a> method
-    of Underscore which takes in 1 number and 1 function and then starts from
-    0 and for 10 steps counts up by 1, calling the function with the number
-    each step of the way.</p>
+  <p>Este código usa el método <a href="http://underscorejs.org/#times">times</a> de Underscore,
+    el cual toma un número y una función y luego inicia de 0 y por 10 pasos cuenta de a uno, llamando a la
+	función con el número de cada paso.</p>
   <p>
     <img src="images/times-loop.png" alt="console">
   </p>
-  <p>If we were to manually write out what <code data-language="javascript"
-    class="rainbow">times</code> is doing in the above code it would look like
-    this:</p>
+  <p>Si tuviesemos que, manualmente, escribir lo que <code data-language="javascript"
+    class="rainbow">times</code> está haciendo en el código anterior, se ería como ésto:</p>
 <pre><code data-language="javascript" class="rainbow"><span class="function call">logANumber</span>(0)
 <span class="function call">logANumber</span>(1)
 <span class="function call">logANumber</span>(2)
@@ -374,111 +361,106 @@ _.<span class="function call">times</span>(<span class="constant numeric">10</sp
 <span class="function call">logANumber</span>(8)
 <span class="function call">logANumber</span>(9)</code></pre>
 
-  <p>But cats refuse to do unnecessary manual work like this so we must always
-    ask ourselves, <em>"am I doing this in the laziest way possible?"</em>.</p>
-  <p>So why is this called looping? Think of it like this: If we were to write
-    out a list of 10 numbers (from 0 to 9) using a JavaScript Array it would
-    look like this:</p>
+  <p>Pero los gatos se rehusan a hacer trabajo manual innecesario como éste, así
+    que siempre debemos pregungtarnos, <em>"¿lo estoy haciendo de la forma más perezosa posible?"</em>.</p>
+  <p>¿Por qué se dice: "recorrer"?, piensalo de la siguienta manera: si tuviera que escribir
+    una lista de diez numeros (de 0 a 9) usando un Vector de JavaScript, se vería como ésto:</p>
 <pre><code data-language="javascript" class="rainbow"><span class="keyword">var</span> zeroThroughTen <span class="keyword operator">=</span> [<span class="constant numeric">0</span>, <span class="constant numeric">1</span>, <span class="constant numeric">2</span>, <span class="constant numeric">3</span>, <span class="constant numeric">4</span>, <span class="constant numeric">5</span>, <span class="constant numeric">6</span>, <span class="constant numeric">7</span>, <span class="constant numeric">8</span>, <span class="constant numeric">9</span>]</code></pre>
 
-  <p>What <code data-language="javascript" class="rainbow">times</code> really
-    does is visit each number and repeat a task: in the example above the task
-    was to call the <code data-language="javascript" class="rainbow">logANumber</code> function
-    with the current number. Repeating tasks in this way is referred to as <em>looping over</em> the
-    Array.</p>
+  <p>Lo que <code data-language="javascript" class="rainbow">times</code> realmente
+    hace es visitar cada número y repetira una tarea: en el ejemplo de arriba la tarea era
+	llamar a la función <code data-language="javascript" class="rainbow">logANumber</code>
+	con el número actual. Repetir tareas de esta forma es conocido como <em>recorrer</em> el Vector.</p>
 
 <h3><a id="arrays" href="#arrays">#</a> Arrays</h3>
 
-  <p>I've mentioned these a few times but let's spend a minute learning about
-    them. Imagine you need to keep track of all your buddies. Well, an Array
-    will do just fine. Think of an Array like a sorted list that you can keep <em>tons</em> of
-    stuff in.</p>
-  <p>This is how you make one:</p>
+  <p>Ya mencioné estas cosas un par de veces, pero tomemos un minuto para aprenderlas.
+    Imagina que tienes que llevar registro de todos tus amigos. Bueno, un Vector lo hará perfectamente bien.
+	Piensa en un Vector como una lista ordenada en la que puedes tener <em>montones</em> de cosas dentro.</p>
+  <p>Así es como creas uno:</p>
 <pre><code data-language="javascript" class="rainbow">  <span class="keyword">var</span> myCatFriends <span class="keyword operator">=</span> [<span class="string">"tommy"</span>, <span class="string">"tabby"</span>, <span class="string">"ceiling"</span>]</code></pre>
 
-  <p>Sweet! Now you have a list of your cat buddies.</p>
-  <p>Elements (that is what you call a single item in an array) that are stored
-    within arrays start at 0 and count up from there. So <code data-language="javascript"
-    class="rainbow">myCatFriends[<span class="constant numeric">0</span>]</code> returns
+  <p>¡Perfecto!, ahora tiene una lista de tus gatos amigos.</p>
+    Los elementos (así es como denominas un solo item del vector) que son guardados en Vectores
+	comienzan en 0 y cuentan hacia arriba desde ahí. Así que <code data-language="javascript"
+    class="rainbow">myCatFriends[<span class="constant numeric">0</span>]</code> retorna
     <code
-    data-language="javascript" class="rainbow">tommy</code>and <code data-language="javascript" class="rainbow">myCatFriends[<span class="constant numeric">1</span>]</code> returns
+    data-language="javascript" class="rainbow">tommy</code>y <code data-language="javascript" class="rainbow">myCatFriends[<span class="constant numeric">1</span>]</code> retorna
       <code
-      data-language="javascript" class="rainbow">tabby</code>... etc etc.</p>
-  <p>To get buddies out of your brand new Array you can just access an element
-    directly like so:</p>
+      data-language="javascript" class="rainbow">tabby</code>... y así sucesivamente.</p>
+  <p>Para obtener amigos de tu nuevo Vecto puedes simplemente acceder a un elemento directamente, como
+    por ejemplo:</p>
 <pre><code data-language="javascript" class="rainbow">  console.<span class="support method">log</span>(myCatFriends[<span class="constant numeric">0</span>])</code></pre>
 
   <p>
     <img src="images/array-access.png" alt="console">
   </p>
-  <p>If you made a brand new cat friend at the hippest cat club the other night
-    and you want to add them to your list it is super simple: <code data-language="javascript"
+  <p>Si hiciste un nuevo amigo gato en el club más de moda la otra noche y quieres
+    agregarlo a tu lista es super simple: <code data-language="javascript"
     class="rainbow">myCatFriends.<span class="support method">push</span>(<span class="string">"super hip cat"</span>)</code>.</p>
-  <p>To check that the new cat made it into your array you can use <code data-language="javascript"
+  <p>Para chequear que está agregado a tu vector, puedes usar <code data-language="javascript"
     class="rainbow">.<span class="support property">length</span></code>:</p>
+
   <p>
     <img src="images/array-push-length.png" alt="console">
   </p>
-  <p>Notice how <code data-language="javascript" class="rainbow">push</code> returned
-    the length? Handy! Also take note that arrays will always <strong>preserve ordering</strong> which
-    means they will remember the order in which you added or defined things.
-    Not everything in JavaScript preserves ordering so remember this special
-    property of Arrays!</p>
+
+  <p>¿Te diste cuenta como <code data-language="javascript" class="rainbow">push</code> retornó
+    el largo?. ¡Útil!, además toma nota como los vectores siempre <strong>preservarán el orden</strong>
+    lo cual significa que recordarán el orden en que agregaste o fueron definidos los elementos.
+	No todo en JavaScript preserva el orden, ¡así que recuerda esta propiedad especial de los Vectores!</p>
 
 <h3><a id="objects" href="#objects">#</a> Objects</h3>
 
-  <p>Arrays are good for lists, but for other tasks they can be hard to work
-    with. Consider our array of cat friends. What if you also wanted to store
-    more than just names?</p>
+  <p>Los vectores son buenos para listas, pero para otras tareas pueden ser incómodos para usar.
+    Considera nuestro vector de gatos amigos. ¿Qué pasaría si quisieras guardar más que solamente nombres?</p>
 <pre><code data-language="javascript" class="rainbow"><span class="keyword">var</span> myCatFriends <span class="keyword operator">=</span> [<span class="string">"tommy"</span>, <span class="string">"tabby"</span>, <span class="string">"ceiling"</span>]
 <span class="keyword">var</span> lastNames <span class="keyword operator">=</span> [<span class="string">"the cat"</span>, <span class="string">"cat"</span>, <span class="string">"cat"</span>]
 <span class="keyword">var</span> addresses <span class="keyword operator">=</span> [<span class="string">"The Alley"</span>, <span class="string">"Grandmas House"</span>, <span class="string">"Attic"</span>]</code></pre>
 
-  <p>Sometimes it is nice to have all of the addresses or names in one variable.
-    But sometimes you have a cat in mind, lets say tommy, and you just want
-    to look up that cats address. With arrays it takes a lot of work because
-    you can't just say 'hey array, give me tommys address' because 'tommy'
-    is in one array and his address is in a totally different array.</p>
-  <p>
+  <p>A veces es lindo tener todas las direcciones o nombres en una variable.
+    Pero a veces, tienes un gato en mente, digamos Tommy y sólo quieres la dirección de él.
+	Con los vectores tomaría mucho trabajo porque no puedes simplemente decir: "Hey vector, dame
+	la dirección de Tommy", porque "Tommy" está en un vector y su dirección está en otro
+	totalmente diferente.</p>
     <img src="images/array-lookup.png" alt="console">
   </p>
-  <p>This can be brittle because if our arrays change and we add a new cat
-    to the beginning we would have to also update our <code data-language="javascript"
-    class="rainbow">tommysPosition</code> variable to point to the new location
-    of tommys information in the arrays! Here is a easier to maintain way to
-    store information like this using objects:</p>
+  <p>Esto puede estar propenso a errores porque si nuestros vectores cambian y agregamos
+    un nuevo gato al inicio del vector deberíamos ademas actualizar nuestra variable <code data-language="javascript"
+    class="rainbow">tommysPosition</code> para que apunte a la nueva ubicación de la información de Tommy en
+	los demás vectores.
+	Aquí hay una forma más sustentable de guardar información como esta usando objetos:</p>
 <pre><code data-language="javascript" class="rainbow"><span class="keyword">var</span> firstCat <span class="keyword operator">=</span> { name: <span class="string">"tommy"</span>, lastName: <span class="string">"the cat"</span>, address: <span class="string">"The Alley"</span> }
 <span class="keyword">var</span> secondCat <span class="keyword operator">=</span> { name: <span class="string">"tabby"</span>, lastName: <span class="string">"cat"</span>, address: <span class="string">"Grandmas House"</span> }
 <span class="keyword">var</span> thirdCat <span class="keyword operator">=</span> { name: <span class="string">"ceiling"</span>, lastName: <span class="string">"cat"</span>, address: <span class="string">"Attic"</span> }</code></pre>
 
-  <p>Why would we do it this way? Because now we have a variable for each cat
-    that we can use to get that cats values in a more convenient and readable
-    way.</p>
+  <p>¿Por qué lo haríamos de este modo?, porque ahora tenemos una variable por cada
+    gato, que podemos usar los valores de los gatos en una form más conveniente y legible.</p>
   <p>
     <img src="images/object-lookup.png" alt="console">
   </p>
-  <p>You can think of Objects like keys on a keyring. Each one is for a specific
-    door and if you have nice labels on your keys you can open doors very fast.
-    In fact, the things on the left hand side of the <code data-language="javascript"
-    class="rainbow">:</code> are called <strong>keys</strong> (are also known
-    as <strong>properties</strong>) and the things on the right hand side are <strong>values</strong>.</p>
+  <p>Puedes pensar en los Objetos como llaves en un llavero. Cada una es para una puerta
+    específica y si tienes bellas etiquetas en tus llaves puedes abrir las puertas rápido.
+    De hecho, las cosas a la izquierda del <code data-language="javascript" class="rainbow">:</code>
+	son llamadas <strong>llaves</strong> (también son conocidas como <strong>propiedades</strong>), y
+	las cosas a la derecha son denominadas <strong>valores</strong>.</p>
 <pre><code data-language="javascript" class="rainbow"><span class="comment">// an object with a single key 'name' and single value 'tommy'</span>
 { name: <span class="string">'tommy'</span> }</code></pre>
 
-  <p>So why would you ever use arrays if you can just put your data in objects?
-    Because objects don't remember the order of the keys that you set. You
-    might enter in an object like this:</p>
+  <p>Entonces ¿por qué usarías arrays si puedes guardar la información en objetos?.
+    Porque los objetos no recuerdan el orden de las llaves que definiste.
+	Generalmente trabajas sobre un objeto de la siguiente forma:</p>
 <pre><code data-language="javascript" class="rainbow">{ date: <span class="string">"10/20/2012"</span>, diary: <span class="string">"slept a bit today"</span>, name: <span class="string">"Charles"</span> }</code></pre>
 
-  <p>But the computer could give it back to you like this:</p>
+  <p>Pero la computadora puede devolvertelo así:</p>
 <pre><code data-language="javascript" class="rainbow">{ diary: <span class="string">"slept a bit today"</span>, name: <span class="string">"Charles"</span>, date: <span class="string">"10/20/2012"</span> }</code></pre>
 
-  <p>Or like this!</p>
+  <p>¡O como esto!</p>
 <pre><code data-language="javascript" class="rainbow">{ name: <span class="string">"Charles"</span>, diary: <span class="string">"slept a bit today"</span>, date: <span class="string">"10/20/2012"</span> }</code></pre>
 
-  <p>So you can't ever trust the order of keys in objects. If you wanna get
-    REALLY fancy you can make an array filled with objects, or an object filled
-    with arrays!</p>
+  <p>Así que no puedes confiar en el orden de las llaves en el objeto. Si quieres
+    ser REALEMENTE sofisticado puedes hacer un Vector y llenarlo con Objetos, o ¡un objeto
+    rellenado de vectores!<p>
 <pre><code data-language="javascript" class="rainbow"><span class="keyword">var</span> moodLog <span class="keyword operator">=</span> [
   {
     date: <span class="string">"10/20/2012"</span>,
@@ -500,10 +482,10 @@ _.<span class="function call">times</span>(<span class="constant numeric">10</sp
   napSpots: [<span class="string">"couch"</span>, <span class="string">"planter box"</span>, <span class="string">"human face"</span>]
 }</code></pre>
 
-  <p>When you combine different things like this you are making <strong>data structures</strong>,
-    just like legos!</p>
+  <p>Cuando combias diferntes cosas como estas lo que estás haciendo se conoce como <strong>estructura de datos</strong>, ¡igual a los legos!</p>
 
 <h3>That is the end for now, but here's what I'm working on:</h3>
+<h3>Este es el fin por ahora, pero aquí está en lo que estoy trabajando:</h3>
 
   <ul>
     <li>More crazy looping!</li>
@@ -513,17 +495,15 @@ _.<span class="function call">times</span>(<span class="constant numeric">10</sp
     <li>Node.js and server side catgramming</li>
   </ul>
   <p>Got another topic you wanna see covered? Open an issue for it <a href="http://github.com/maxogden/javascript-for-cats">on github</a>.</p>
-  <p>I'd recommend coming back again tomorrow and going through the entire
-    thing again from the beginning! It might take a few times through before
-    you get everything (programming is hard). Just try to avoid reading this
-    page in any rooms that contain shiny objects... they can be incredibly
-    distracting.</p>
+  <p>Te recomiendo que vuelvas mañana y recorrar esta página desde el inicio, puede tomar
+    un par de veces entender todo (programar es difícil). Sólo intenta evitar leerla
+	en habitaciones que contngan objetos brillantes... pueden ser increíblemente distractores.</p>
 
 <h3><a id="recommended-reading" href="#recommended-reading">#</a> Recommended reading</h3>
 
-  <p>JavaScript For Cats skips over lots of details that aren't important for
-    getting started (cats are not known for their attention spans), but if
-    you feel like you need to dive in deeper then check these out:</p>
+  <p>JavaScript para Gatos saltea muchos detalles que no son importantes para empezar
+    (los gatos no son conocidos por su capacidad de atención), pero si sientes que necesitas
+	meterte más a fondo, entonces visita:</p>
   <ul>
     <li><a href="http://eloquentjavascript.net/">Eloquent Javascript</a> is a free
       book that teaches you JavaScript! It's pretty good! Especially the chapter
